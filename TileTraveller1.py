@@ -5,16 +5,33 @@ Not a valid direction!
 Direction: n
 Victory! 
 """
-# Create cardinal directions
-n, e = 1,1
-s, w = -1,-1
 
 #Initial position
 x = 1
 y = 1
 
+position = 0
 
-while x!=2 and y==1:
-    print("It worked!")
-    x = 2
-    y =1
+switch = False
+
+while switch==False:
+    position = str(input("Direction:"))
+     
+    if position == "n":
+        y += 1
+        print(x,y)
+    elif position == "e":
+        x += 1
+        print(x,y)
+    elif position == "s":
+        y -= 1
+        print(x,y)
+    elif position == "w":
+        x -= 1
+        print(x,y)
+    else:
+        "Uuuunacceptable!"
+    if x==2 and y == 1:        
+        print("Victory!")
+        switch = True
+    
