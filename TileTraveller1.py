@@ -16,7 +16,7 @@ switch = False
 
 while switch==False:
     
-    if (x==1 and y ==1) or (x==3 and y ==1):
+    if (x==1 and y ==1) or (x==2 and y ==1):
         print("You can travel: (N)orth")
         position = str(input("Direction:"))
         if position == "n":
@@ -26,7 +26,7 @@ while switch==False:
             print("Not a valid direction!")
     
     elif (x==1 and y==2):
-        print("You can travel: (N)orth or (E)ast")
+        print("You can travel: (N)orth, (S)outh, or (E)ast")
         position = str(input("Direction:"))
         if position == "n":
             y += 1
@@ -54,7 +54,7 @@ while switch==False:
             print("Not a valid direction!")
     
     elif (x==2 and y == 3):
-        print("You can travel: (S)outh or (E)ast")
+        print("You can travel: (E)ast or (W)est")
         position = str(input("Direction:"))
         
         if position == "e":
@@ -91,7 +91,7 @@ while switch==False:
         else:
             print("Not a valid direction!")
 
-    if x==2 and y == 1:        
+    if x==3 and y == 1:        
         print("Victory!")
         switch = True
     
